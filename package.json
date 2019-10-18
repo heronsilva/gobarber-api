@@ -1,9 +1,20 @@
 {
   "name": "gobarber",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/server.js",
   "license": "MIT",
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/server.js",
+    "dev:debug": "nodemon --exec babel-node --inspect src/server.js"
+  },
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/node": "^7.6.3",
+    "@babel/preset-env": "^7.6.3",
+    "nodemon": "^1.19.4"
   }
 }
