@@ -4,12 +4,9 @@ module.exports = {
       type: Sequelize.INTEGER,
       allowNull: true,
       after: 'provider',
-      references: {
-        model: 'files',
-        key: 'id',
-        onDelete: 'SET NULL',
-        onUpdate: 'CASCADE',
-      },
+      references: { model: 'files', key: 'id' },
+      onDelete: 'SET NULL',
+      onUpdate: 'CASCADE',
     })
   },
 
